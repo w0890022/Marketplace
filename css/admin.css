@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+
+.admin-header {
+
+    background-color: #333;
+    color: white;
+    padding: 20px;
+
+}
+
+
+.admin-header nav a {
+
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+
+.admin-header nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+main {
+
+    padding: 30px;
+
+}
+
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+
+}
+
+
+th {
+
+    background: #444;
+    color: white;
+    padding: 12px;
+
+}
+
+
+td {
+
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+table img {
+
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+
+.admin-footer {
+
+    text-align: center;
+    padding: 20px;
+
+}
