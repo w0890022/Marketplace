@@ -1,3 +1,11 @@
+<?php
+
+$isLocal = ($_SERVER['SERVER_NAME'] == 'localhost');
+
+$basePath = $isLocal ? "/BookStore" : "";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +15,7 @@
 
     <title>Samantha's Marketplace</title>
 
-    <link rel="stylesheet" href="/BookStore/css/style.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>/css/style.css">
 </head>
 
 <body>
@@ -17,10 +25,10 @@
     <h1>📚 Samantha's Marketplace</h1>
 
     <nav>
-        <a href="/BookStore/index.php">Home</a>
-        <a href="/BookStore/books.php">Books</a>
-        <a href="/BookStore/about.php">About</a>
-        <a href="/BookStore/contact.php">Contact</a>
+        <a href="<?php echo $basePath; ?>/index.php">Home</a>
+        <a href="<?php echo $basePath; ?>/books.php">Books</a>
+        <a href="<?php echo $basePath; ?>/about.php">About</a>
+        <a href="<?php echo $basePath; ?>/contact.php">Contact</a>
     </nav>
 
 </header>

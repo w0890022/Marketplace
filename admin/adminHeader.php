@@ -1,3 +1,11 @@
+<?php
+
+$isLocal = ($_SERVER['SERVER_NAME'] == 'localhost');
+
+$basePath = $isLocal ? "/BookStore" : "";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +16,7 @@
 
 <title>Admin Dashboard</title>
 
-<link rel="stylesheet" href="/BookStore/css/admin.css">
+<link rel="stylesheet" href="<?php echo $basePath; ?>/css/admin.css">
 
 </head>
 
@@ -20,18 +28,21 @@
 
 <nav>
 
-<a href="/BookStore/admin/inventory.php">
+<a href="<?php echo $basePath; ?>/admin/inventory.php">
 Inventory
 </a>
 
-<a href="/BookStore/admin/addItem.php">
+<a href="<?php echo $basePath; ?>/admin/addItem.php">
 Add Item
 </a>
 
-<a href="/BookStore/index.php">
+<a href="<?php echo $basePath; ?>/index.php">
 View Website
 </a>
 
+<a href="logout.php">
+Logout
+</a>
 </nav>
 
 </header>

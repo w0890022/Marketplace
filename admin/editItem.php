@@ -1,5 +1,5 @@
 <?php
-
+include "auth.php";
 include "../includes/db.php";
 include "adminHeader.php";
 
@@ -12,14 +12,6 @@ $sql = "SELECT * FROM items WHERE id=$id";
 $result = $conn->query($sql);
 
 $item = $result->fetch_assoc();
-if(isset($_POST['update'])) {
-
-
-$title = $_POST['title'];
-$author = $_POST['author'];
-$category = $_POST['category'];
-$price = $_POST['price'];
-$description = $_POST['description'];
 
 
 if(isset($_POST['update'])) {
@@ -33,7 +25,6 @@ $description = $_POST['description'];
 
 
 $image = $item['image'];
-
 
 
 if (!empty($_FILES['image']['name'])) {
@@ -65,18 +56,9 @@ $conn->query($sql);
 
 
 header("Location: inventory.php");
-
-
-}
-
-
-$conn->query($sql);
-
-
-header("Location: inventory.php");
+exit();
 
 }
-
 
 ?>
 

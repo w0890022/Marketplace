@@ -78,3 +78,47 @@ table img {
     padding: 20px;
 
 }
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.actions a {
+
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+
+}
+
+
+.edit-btn {
+
+    background-color: #3498db;
+
+}
+
+
+.status-btn {
+
+    background-color: #27ae60;
+
+}
+
+
+.delete-btn {
+
+    background-color: #e74c3c;
+
+}
+
+
+.actions a:hover {
+
+    opacity: 0.8;
+
+}

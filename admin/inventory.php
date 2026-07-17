@@ -1,5 +1,5 @@
 <?php
-
+include "auth.php";
 include "../includes/db.php";
 include "adminHeader.php";
 
@@ -89,13 +89,14 @@ $<?php echo $item['price']; ?>
 </td>
 
 
-<td>
+<td class="actions">
 
-<a href="editItem.php?id=<?php echo $item['id']; ?>">
-    Edit 
+<a class="edit-btn" href="editItem.php?id=<?php echo $item['id']; ?>">
+    Edit
 </a>
 
-<a href="markSold.php?id=<?php echo $item['id']; ?>">
+
+<a class="status-btn" href="markSold.php?id=<?php echo $item['id']; ?>">
 
 <?php
 
@@ -110,6 +111,15 @@ if ($item['status'] == "Available") {
 }
 
 ?>
+
+</a>
+
+
+<a class="delete-btn" 
+href="deleteItem.php?id=<?php echo $item['id']; ?>"
+onclick="return confirm('Are you sure you want to delete this item?');">
+
+    Delete
 
 </a>
 

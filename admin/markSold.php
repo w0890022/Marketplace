@@ -1,5 +1,5 @@
 <?php
-
+include "auth.php";
 include "../includes/db.php";
 
 
@@ -39,5 +39,5 @@ $conn->query($sql);
 
 
 header("Location: inventory.php");
-
+exit();
 ?>

@@ -1,6 +1,7 @@
 <?php
-
+include "auth.php";
 include "../includes/db.php";
+include "adminHeader.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -11,18 +12,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description = $_POST["description"];
     $condition_status = $_POST["condition_status"];
     $status = "Available";
-$image = $_FILES['image']['name'];
 
-$target = "../uploads/" . basename($image);
+    $image = $_FILES['image']['name'];
 
-move_uploaded_file($_FILES['image']['tmp_name'], $target);
+    $target = "../uploads/" . basename($image);
 
-$sql = "INSERT INTO items 
-(title, category, author, price, description, condition_status, image, status)
+    move_uploaded_file($_FILES['image']['tmp_name'], $target);
 
-VALUES
+    $sql = "INSERT INTO items 
+    (title, category, author, price, description, condition_status, image, status)
 
-('$title', '$category', '$author', '$price', '$description', '$condition_status', '$image', '$status')";
+    VALUES
+
+    ('$title', '$category', '$author', '$price', '$description', '$condition_status', '$image', '$status')";
 
 
     if ($conn->query($sql) === TRUE) {
