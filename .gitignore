@@ -1,2 +1,13 @@
-uploads/
+# Database credentials
 includes/db.php
+
+# Uploaded images
+uploads/
+
+# Testing files
+test.php
+resetPassword.php
+createAdmin.php
+
+# Environment files
+.env
