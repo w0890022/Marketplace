@@ -1,44 +1,27 @@
-# 📚 Marketplace Bookstore
+# Marketplace
 
-A personal online marketplace project built with PHP, MySQL, HTML, and CSS.
+A personal online yard sale website built with PHP and MySQL.
 
-## About
+## Live Website
 
-This project started as a way to create my own online yard sale system for selling books and household items.
+🌐 https://marketplace.gt.tc
 
-The goal is to build a website where items can be uploaded, managed, searched, filtered, and sold without manually editing code.
+## Features
 
-## Current Features
-
-✅ Add inventory items  
-✅ Upload item images  
-✅ Store data in MySQL database  
-✅ Display items dynamically  
-✅ Search inventory  
-✅ Filter by category  
-✅ Admin inventory page  
-✅ Edit item information  
-✅ Replace images  
-✅ Mark items as sold  
-✅ Responsive marketplace layout  
+- Browse available items
+- Search items
+- Filter by category
+- Admin inventory management
+- Add/edit/delete items
+- Upload images
+- Mark items sold or available
 
 ## Technologies Used
 
-- HTML
-- CSS
 - PHP
 - MySQL
-- XAMPP
-- Git/GitHub
-
-## Future Features
-
-- Individual item detail pages
-- User checkout system
-- Multiple image uploads
-- Additional categories:
-  - Movies
-  - Games
-  - Collectibles
-  - Household items
-- Better admin dashboard
+- HTML
+- CSS
+- JavaScript
+- XAMPP (local development)
+- InfinityFree (hosting)
