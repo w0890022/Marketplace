@@ -7,7 +7,7 @@ include "includes/header.php";
 
 <main>
 
-<h2>Available Books</h2>
+<h2>Other Items</h2>
 <p>
 All items are available for local pickup only.
 Please contact me to arrange a pickup time.
@@ -57,7 +57,7 @@ $category = "";
 
 $sql = "SELECT * FROM items 
 WHERE status='Available'
-AND category='Book'";
+AND category!='Book'";
 
 if (isset($_GET['search']) && $_GET['search'] != "") {
 

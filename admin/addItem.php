@@ -27,16 +27,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ('$title', '$category', '$author', '$price', '$description', '$condition_status', '$image', '$status')";
 
 
-    if ($conn->query($sql) === TRUE) {
+   if ($conn->query($sql) === TRUE) {
 
-        echo "Item added successfully!";
+    echo "Item added successfully!";
+    echo "<br>ID created: " . $conn->insert_id;
 
-    } else {
+} else {
 
-        echo "Error: " . $conn->error;
+    echo "Error: " . $conn->error;
 
-    }
-
+}
 }
 
 ?>

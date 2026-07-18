@@ -24,11 +24,12 @@ $basePath = $isLocal ? "/BookStore" : "";
 
     <h1>📚 Samantha's Marketplace</h1>
 
-    <nav>
-        <a href="<?php echo $basePath; ?>/index.php">Home</a>
-        <a href="<?php echo $basePath; ?>/books.php">Books</a>
-        <a href="<?php echo $basePath; ?>/about.php">About</a>
-        <a href="<?php echo $basePath; ?>/contact.php">Contact</a>
-    </nav>
+<nav>
+    <a href="index.php">Home</a>
+    <a href="books.php">Books</a>
+    <a href="items.php">Other Items</a>
+    <a href="about.php">About</a>
+    <a href="contact.php">Contact</a>
+</nav>
 
 </header>

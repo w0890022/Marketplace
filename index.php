@@ -10,9 +10,13 @@ include "includes/header.php";
         Browse my collection of books and other items for sale.
     </p>
 
-    <a href="books.php" class="btn">
-        Browse Books
-    </a>
+<a href="books.php" class="btn">
+    Browse Books
+</a>
+
+<a href="items.php" class="btn">
+    Browse Other Items
+</a>
 
 </main>
 
